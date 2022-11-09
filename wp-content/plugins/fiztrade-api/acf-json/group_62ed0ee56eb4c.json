@@ -1,0 +1,42 @@
+{
+    "key": "group_62ed0ee56eb4c",
+    "title": "fiz api",
+    "fields": [
+        {
+            "key": "field_62ed0efe0f40d",
+            "label": "",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "<button type=\"button\" class=\"button-secondary\" id=\"fiztrade_api\">Get Api Product<\/button>",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "FizTradeApi-settings"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1659713313
+}
