@@ -61,4 +61,5 @@ if ( class_exists( 'WooCommerce' ) ) {
 
 require get_template_directory() . '/inc/about-themes.php';
 
+require get_template_directory() . '/functions-custom.php';
 

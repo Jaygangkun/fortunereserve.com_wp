@@ -122,23 +122,54 @@ class joyas_shop_Header_Layout{
 	*/
 	function site_header_layout(){
 		?>
-		<div class="navsticky">
-		<div class="container">
-			<div class="row align-items-center">
-				<div class="col-xl-9 col-lg-9 col-sm-8 col-12 logo-wrap">
-					<div class="d-flex align-items-center gap-3">
-						<?php do_action('joyas_shop_header_layout_1_branding');?>
+		<div class="navsticky1">
+			<div class="topbar-ft-spot-price-data">
+				<div class="topbar-ft-spot-price-data-slice type-gold">
+					<span class="topbar-ft-spot-price-data-slice-name">GOLD</span>
+					<span class="topbar-ft-spot-price-data-slice-price">$<span class="ft-spot-price">--</span></span>
+					<span class="topbar-ft-spot-price-data-slice-change change-down"></span>
+				</div>
+				<div class="topbar-ft-spot-price-data-slice type-silver">
+					<span class="topbar-ft-spot-price-data-slice-name">SILVER</span>
+					<span class="topbar-ft-spot-price-data-slice-price">$<span class="ft-spot-price">--</span></span>
+					<span class="topbar-ft-spot-price-data-slice-change change-up"></span>
+				</div>
+				<div class="topbar-ft-spot-price-data-slice type-platinum">
+					<span class="topbar-ft-spot-price-data-slice-name">platinum</span>
+					<span class="topbar-ft-spot-price-data-slice-price">$<span class="ft-spot-price">--</span></span>
+					<span class="topbar-ft-spot-price-data-slice-change change-down"></span>
+				</div>
+				<div class="topbar-ft-spot-price-data-slice type-palladium">
+					<span class="topbar-ft-spot-price-data-slice-name">palladium</span>
+					<span class="topbar-ft-spot-price-data-slice-price">$<span class="ft-spot-price">--</span></span>
+					<span class="topbar-ft-spot-price-data-slice-change change-up"></span>
+				</div>
+			</div>
+			<div class="header-container-wrap">
+				<div class="header-logo-search-container">
+					<div class="container">
+						<div class="row align-items-center">
+							<div class="col-xl-9 col-lg-9 col-sm-8 col-12 logo-wrap">
+								<div class="d-flex align-items-center gap-3 justify-content-between">
+									<?php do_action('joyas_shop_header_layout_1_branding');?>
+									<?php //do_action('joyas_shop_header_layout_1_navigation'); ?>
+								</div>
+							</div>
+							<div class="col-xl-3 col-lg-3 col-sm-4 col-12 text-right logo-wrap">
+								
+								<?php echo wp_kses( $this->get_site_header_icon(), $this->alowed_tags() );?>
+									
+								
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="mega-menu-container">
+					<div class="container">
 						<?php do_action('joyas_shop_header_layout_1_navigation'); ?>
 					</div>
 				</div>
-				<div class="col-xl-3 col-lg-3 col-sm-4 col-12 text-right logo-wrap">
-					
-					<?php echo wp_kses( $this->get_site_header_icon(), $this->alowed_tags() );?>
-						
-					
-			   	</div>
 			</div>
-		</div>
 		</div>	
 		<?php		
 	}
