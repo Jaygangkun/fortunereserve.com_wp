@@ -183,8 +183,8 @@
 	  	$(window).on('load resize', function() {
 			if ( matchMedia( 'only screen and (max-width: 992px)' ).matches ) {
 				
-				var el = document.querySelector('#navbar');
-  				SimpleScrollbar.initEl(el);
+				// var el = document.querySelector('#navbar');
+  				// SimpleScrollbar.initEl(el);
 			}
 		});
 		

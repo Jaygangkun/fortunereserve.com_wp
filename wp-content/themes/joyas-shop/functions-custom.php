@@ -14,6 +14,7 @@ function ft_topbar_spot_price_data() {
             padding: 10px;
             width: 100%;
             background: #d2a35c;
+            flex-wrap: wrap;
         }
 
         .topbar-ft-spot-price-data-slice {

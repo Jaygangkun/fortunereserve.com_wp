@@ -3462,3 +3462,13 @@ header.site-header {
 .header-logo-search-container {
 	padding: 20px 0px;
 }
+
+@media screen and (max-width: 850px) {
+	.mega-menu-item-type-widget.widget_media_image {
+		text-align: center !important;
+	}
+	
+	.mega-menu-item-type-widget.widget_media_image img {
+		width: 100px;
+	}	
+}
